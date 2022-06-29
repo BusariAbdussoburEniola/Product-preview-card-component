@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.card {
+    width: 375px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card-inner {
+    padding: 20px;
+}
+
+.photo {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pre-head {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    color: hsl(228, 12%, 48%);
+}
+
+.head {
+    font-family: 'Fraunces', serif;
+}
+
+.content {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5em;
+    margin-bottom: 35px;
+}
+
+.price {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.promo-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.actual-price {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+}
+
+.buy {
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px;
+    margin: 0 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.buy:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .d-photo {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 501px) {
+
+    .photo {
+        display: none;
+    }
+    
+    .card {
+        margin: 15vh;
+        width: 600px;
+        display: flex;
+    }
+
+    .d-photo {
+        width: 50%;
+    }
+}
